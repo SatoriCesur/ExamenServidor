@@ -25,18 +25,18 @@
         echo "Tu nota es un: ";
         if($nota_media >= 9 && $nota_media <=10){
             echo "Sobresaliente";
-        }elseif($nota_media >= 7){
+        }elseif($nota_media >= 7 && $nota_media < 9){
             echo "Notable";
-        }elseif($nota_media >= 5){
+        }elseif($nota_media >= 5 && $nota_media < 7){
             echo "Aprobado";
         }else{
             echo "Suspenso";
         }
     // Compruebo si el alumno esta matriculado con un if simple
     
-    echo "<br><br>Estado: ";
+    echo "<br><br>";
         if($es_matriculado){
-            echo "Alumno matriculado";
+            echo "Estado: Alumno matriculado";
         }
     /*Creo la tabla con el bucle while dandole un borde, donde creo dos columnas y 5 filas, en el que en primera columna 
     esta Fila número y en la segunda columna hay un contador desde la primera fila hasta la última*/
