@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Examen Servidor</title>
+    <title>Examen Servidor - Hamza Satori</title>
 </head>
 <body>
     <?php
@@ -11,7 +11,7 @@
 
         $nombre_alumno = "Hamza Satori";
         $modulo = "Desarrollo Web en Entorno Servidor";
-        $nota_media = "7.5";
+        $nota_media = 7.5;
         $es_matriculado = true;
     // Imprimo todas las varibles
 
@@ -28,30 +28,28 @@
         }elseif($nota_media >= 7){
             echo "Notable";
         }elseif($nota_media >= 5){
-            echo "Aprovacho";
+            echo "Aprovado";
         }else{
             echo "Suspenso";
         }
-    // Compruebo si el alumno esta matriculado con un if else
+    // Compruebo si el alumno esta matriculado con un if simple
     
     echo "<br><br>Estado: ";
         if($es_matriculado){
             echo "Alumno matriculado";
-        }else{
-            echo "Alumno no matriculado";
         }
     /*Creo la tabla con el bucle while dandole un borde, donde creo dos columnas y 5 filas, en el que en primera columna 
     esta Fila número y en la segunda columna hay un contador desde la primera fila hasta la última*/
 
     echo "<br><br>";
     echo "<table border=1>";
-        $contador = 1;
-        while($contador <= 5){
+        $i = 1;
+        while($i <= 5){
             echo "<tr>";
             echo "<td>Fila número:</td>";
-            echo "<td>$contador</td>";
+            echo "<td>$i</td>";
             echo "</tr>";
-            $contador++;
+            $i++;
         }
 
     echo "</table>";
