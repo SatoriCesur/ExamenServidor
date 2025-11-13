@@ -23,7 +23,7 @@
     // Creo la estructura if else para validar la nota dependiendo de la de lo que ha sacado el alumno
 
         echo "Tu nota es un: ";
-        if($nota_media >= 9){
+        if($nota_media >= 9 && $nota_media <=10){
             echo "Sobresaliente";
         }elseif($nota_media >= 7){
             echo "Notable";
